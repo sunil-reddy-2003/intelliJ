@@ -1,10 +1,10 @@
 public class SelectionSort {
 
     static void selectionSort(int[] arr){
-        int startIndex=0;
+
         for(int i=0; i<arr.length; i++){
             int lastIndex = arr.length-i-1;
-            int maxEleIndex=getMaxIndex(arr,startIndex, lastIndex);
+            int maxEleIndex=getMaxIndex(arr,0, lastIndex);
             int temp=arr[lastIndex];
             arr[lastIndex]=arr[maxEleIndex];
             arr[maxEleIndex]=temp;
