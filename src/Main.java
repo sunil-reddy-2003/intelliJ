@@ -27,6 +27,7 @@ public class Main {
 
 
         ReversedLL rll = new ReversedLL();
+
         rll.addRLL(1);
         rll.addRLL(2);
         rll.addRLL(3);
