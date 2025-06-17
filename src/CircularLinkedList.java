@@ -68,5 +68,21 @@ public class CircularLinkedList {
         System.out.println("Head");
     }
 
+    public static void main(String[] args) {
+
+        CircularLinkedList cll = new CircularLinkedList();
+        cll.add(20);
+        cll.add(3);
+        cll.add(5);
+
+        cll.insertCLL(1,1);
+        cll.insertCLL(2,2);
+        cll.insertCLL(3,3);
+        cll.insertCLL(4,4);
+        cll.insertCLL(5,5);
+        cll.display();
+
+    }
+
 
 }

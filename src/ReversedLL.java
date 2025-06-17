@@ -49,4 +49,17 @@ public class ReversedLL {
         }
         System.out.println("START");
     }
+
+
+    public static void main(String[] args) {
+        ReversedLL rll = new ReversedLL();
+        rll.addRLL(1);
+        rll.addRLL(2);
+        rll.addRLL(3);
+        rll.addRLL(4);
+        rll.addRLL(5);
+        rll.addRLL(6);
+        rll.displayRLL();
+        rll.reverseRLL();
+    }
 }

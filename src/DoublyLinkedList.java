@@ -77,4 +77,17 @@ class DoublyLinkedList {
         }
         System.out.println();
     }
+
+    public static void main(String[] args) {
+
+        DoublyLinkedList dll = new DoublyLinkedList();
+        dll.add(2);
+        dll.add(3);
+        dll.add(5);
+        dll.addFirst(1);
+        dll.addLast(6);
+        dll.insert(4,4);
+        dll.display();
+
+    }
 }
