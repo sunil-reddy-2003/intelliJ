@@ -1,15 +1,13 @@
 public class SelectionSort {
 
     static void selectionSort(int[] arr){
+        int startIndex=0;
         for(int i=0; i<arr.length; i++){
-            int startIndex=0;
             int lastIndex = arr.length-i-1;
             int maxEleIndex=getMaxIndex(arr,startIndex, lastIndex);
-            if(arr[lastIndex]<arr[maxEleIndex]){
-                int temp=arr[lastIndex];
-                arr[lastIndex]=arr[maxEleIndex];
-                arr[maxEleIndex]=temp;
-            }
+            int temp=arr[lastIndex];
+            arr[lastIndex]=arr[maxEleIndex];
+            arr[maxEleIndex]=temp;
         }
     }
 
@@ -25,10 +23,10 @@ public class SelectionSort {
 
 
     public static void main(String[] args){
-//        int[] arr={5,4,3,2,1};
+        int[] arr={5,4,3,2,1};
 //        int[] arr={1,2,3,4,5};
 //        int[] arr={};
-        int[] arr={1};
+//        int[] arr={1};
 //        int[] arr={2,1};
 //        int[] arr={4,7,0,-22,-31};
 
