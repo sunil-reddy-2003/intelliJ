@@ -1,9 +1,27 @@
 public class SelectionSort {
 
     static void selectionSort(int[] arr){
-
+        for(int i=0; i<arr.length; i++){
+            int startIndex=0;
+            int lastIndex = arr.length-i-1;
+            int maxEleIndex=getMaxIndex(arr,startIndex, lastIndex);
+            if(arr[lastIndex]<arr[maxEleIndex]){
+                int temp=arr[lastIndex];
+                arr[lastIndex]=arr[maxEleIndex];
+                arr[maxEleIndex]=temp;
+            }
+        }
     }
 
+     static int getMaxIndex(int[] arr, int startIndex, int lastIndex) {
+        int maxIndex= startIndex;
+        for(int i = startIndex; i<=lastIndex; i++){
+            if(arr[maxIndex]<arr[i]){
+                maxIndex=i;
+            }
+        }
+        return maxIndex;
+    }
 
 
     public static void main(String[] args){
@@ -13,7 +31,6 @@ public class SelectionSort {
         int[] arr={1};
 //        int[] arr={2,1};
 //        int[] arr={4,7,0,-22,-31};
-
 
         selectionSort(arr);
         for (int c : arr) {
