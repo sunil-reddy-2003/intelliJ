@@ -1,3 +1,5 @@
+package TypesOfLL;
+
 class Node{
     int data;
     Node next;

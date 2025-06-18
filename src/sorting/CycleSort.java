@@ -1,3 +1,5 @@
+package sorting;
+
 public class CycleSort {
     public static void cycleSort(int[] arr){
         int i=0;
