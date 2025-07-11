@@ -16,10 +16,12 @@ public class Main {
 //        car.acc();
 //        car.start();
 //        car.stop();
-
-//        car.brake();
+//
+////        car.brake();
 //        ((Car) car).brake();
 
+
+        // engine stop when we try to stop the media
 //        Media carMedia = new Car();
 //        carMedia.stop();
 

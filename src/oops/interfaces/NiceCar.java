@@ -2,7 +2,8 @@ package oops.interfaces;
 
 public class NiceCar {
     private Engine engine;
-    private Media player = new CDplayer();
+    private final Media player = new CDplayer();
+
     public NiceCar(){
         engine=new PowerEngine();
     }
@@ -23,5 +24,6 @@ public class NiceCar {
     }
     public void upgradeEngine(){
         this.engine=new ElectricEngine() ;
+        System.out.println("Engine upgraded");
     }
 }
