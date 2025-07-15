@@ -1,4 +1,4 @@
-package oops;
+package BasicPrograms;
 class Area{
     int length;
     int breadth;
@@ -29,6 +29,5 @@ public class Basic {
         System.out.println("length :"+area.length+" breadth: "+area.breadth);
         Area area2=new Area(area);
         System.out.println("length :"+area.length+" breadth: "+area.breadth);
-        Area area3=new Area();
     }
 }
