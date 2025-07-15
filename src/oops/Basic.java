@@ -1,4 +1,4 @@
-package BasicPrograms;
+package oops;
 class Area{
     int length;
     int breadth;
