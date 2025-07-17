@@ -36,6 +36,10 @@ public class MergeSortInclusiveEnd {
 
         // Copy the merged array back to original
         System.arraycopy(merged, 0, arr, s, merged.length);
+//        for (int l = 0; l < merged.length; l++) {
+//            arr[s + l] = merged[l];
+//        }
+
     }
 
     public static void main(String[] args) {
