@@ -3,10 +3,10 @@ package sorting;
 import java.util.Arrays;
 
 public class QuickSortPractice {
-    public static void sortMethod(int left,int right,int[] nums){
-        if(left>=right){return;}
-        int start=left;
-        int end=right;
+    public static void sortMethod(int low,int high,int[] nums){
+        if(low>=high){return;}
+        int start=low;
+        int end=high;
         int mid=(start+end)/2;
         int pivot=nums[mid];
         while(start<=end){
@@ -24,11 +24,11 @@ public class QuickSortPractice {
                 end--;
             }
         }
-        sortMethod(left,end,nums);
-        sortMethod(start,right,nums);
+        sortMethod(low,end,nums);
+        sortMethod(start,high,nums);
     }
     public static void main(String[] args) {
-        int[] nums={5,3,4,1,0};
+        int[] nums={5,4,3,2,1};
         QuickSortPractice.sortMethod(0,nums.length-1,nums);
         System.out.println(Arrays.toString(nums));
     }

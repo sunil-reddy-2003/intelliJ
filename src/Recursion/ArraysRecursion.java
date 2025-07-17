@@ -13,7 +13,6 @@ public class ArraysRecursion {
 
     public static void main(String[] sunil){
         int[] arr={1,2,3,44,5,6,7,8};
-        int target=404;
         System.out.println(sortedOrNot(arr,0));
     }
 }
