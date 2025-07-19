@@ -1,4 +1,4 @@
-package Queue;
+package Queue.Queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -12,9 +12,9 @@ public class QueueDefault {
         queue.add(4);
         queue.add(5);
         System.out.println(queue);
-//        System.out.println(queue.poll());//retrieves and removes the head
-        System.out.println(queue.peek());//returns the head or returns null if empty
-        System.out.println(queue.element());//returns the head or returns exception if empty
+//        System.out.println(queue.poll());//removes and retrieves the head
+        System.out.println("peek: "+queue.peek());//returns the head or returns null if empty
+        System.out.println("head: "+queue.element());//returns the head or returns exception if empty
         queue.remove();
         queue.remove();
         System.out.println(queue);
