@@ -69,6 +69,25 @@ public class CircularLinkedList {
         while (curr!=head);
         System.out.println("Head");
     }
+    public boolean hasCycle() {
+        NodeCLL slow=head;
+        NodeCLL fast=head;
+        while(fast!=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+            if(slow==fast){
+                int count=0;
+                NodeCLL temp=slow;
+                do{
+                    count++;
+                    temp=temp.next;
+                }while(temp!=fast);
+                System.out.println("cycle size: "+count);
+                return true;
+            }
+        }
+        return false;
+    }
 
     public static void main(String[] args) {
 
@@ -83,6 +102,7 @@ public class CircularLinkedList {
         cll.insertCLL(4,4);
         cll.insertCLL(5,5);
         cll.display();
+        cll.hasCycle();
 
     }
 

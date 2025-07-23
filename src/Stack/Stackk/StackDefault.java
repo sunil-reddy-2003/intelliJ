@@ -1,4 +1,4 @@
-package Stack;
+package Stack.Stackk;
 import java.util.Stack;
 public class StackDefault {
     public static void main(String[] args) {
