@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ThreeSum_15q {
     static List<List<Integer>> threeSum(int[] nums) {
-        Arrays.sort(nums);  // -4,-1,-1,0,1,2
+        Arrays.sort(nums);  // -4,-1,-1.-1,0,1,2
         List<List<Integer>> outer = new ArrayList<>();
 
         for (int i = 0; i < nums.length - 2; i++) {
@@ -20,9 +20,12 @@ public class ThreeSum_15q {
                     outer.add(Arrays.asList(nums[i], nums[start], nums[end]));
 
                     // 🔥 skip duplicate start and end values
-                    while (start < end && nums[start] == nums[start + 1]) start++;
-                    while (start < end && nums[end] == nums[end - 1]) end--;
-
+                    while (start < end && nums[start] == nums[start + 1]) {
+                        start++;
+                    }
+                    while (start < end && nums[end] == nums[end - 1]){
+                        end--;
+                    }
                     start++;
                     end--;
                 } else if (target < 0) {
@@ -36,7 +39,7 @@ public class ThreeSum_15q {
     }
 
     public static void main(String[] args) {
-        int[] arr = {-1, 0, 1, 2, -1, -4};
+        int[] arr = {-1, 0, 1, 2, -1,-1,2, -4};
         List<List<Integer>> ans = threeSum(arr);
         System.out.println(ans); // [[-1, -1, 2], [-1, 0, 1]]
     }
