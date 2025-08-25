@@ -23,6 +23,7 @@ public class ContainerWithMostWater_11q {
         int[] height={1,8,6,2,5,4,8,3,7};
 //        int[] height={8,6,2,5,4,8};
 
+
         int ans=maxArea(height);
         System.out.println(ans);
     }
