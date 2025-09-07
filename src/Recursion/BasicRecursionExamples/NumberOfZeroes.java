@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.BasicRecursionExamples;
 
 public class NumberOfZeroes {
     static int count=0;

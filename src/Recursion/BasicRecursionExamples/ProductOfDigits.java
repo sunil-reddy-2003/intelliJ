@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.BasicRecursionExamples;
 
 public class ProductOfDigits {
     static int productOfDigits(int n){

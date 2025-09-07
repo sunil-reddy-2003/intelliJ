@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Sequences;
 
 public class DiceProblem {
     static void diceComb(String p,int target){

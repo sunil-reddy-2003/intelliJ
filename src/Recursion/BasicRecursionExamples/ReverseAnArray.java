@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.BasicRecursionExamples;
 import java.util.Arrays;
 public class ReverseAnArray
 {

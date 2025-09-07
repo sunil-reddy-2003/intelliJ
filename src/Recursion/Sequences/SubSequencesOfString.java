@@ -1,8 +1,8 @@
-package Recursion;
+package Recursion.Sequences;
 
 import java.util.ArrayList;
 
-public class SubSequences {
+public class SubSequencesOfString {
     static ArrayList<String> subSeqList(String processed, String unProcessed){
         if(unProcessed.isEmpty()){
             ArrayList<String> list=new ArrayList<>();

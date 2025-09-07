@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.BasicRecursionExamples;
 
 public class SumOfDigits {
     static int sumOfDigits(int n){
